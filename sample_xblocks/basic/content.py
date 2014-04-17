@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Content-oriented XBlocks."""
 
+import six
 from string import Template  # pylint: disable=W0402
 
 from lxml import etree
@@ -167,7 +168,7 @@ class HtmlBlock(XBlock):
         """
         block = runtime.construct_xblock_from_class(cls, keys)
 
-        block.content = unicode(node.text or u"")
+        block.content = six.text_type(node.text or u"")
         for child in node:
             block.content += etree.tostring(child, encoding='unicode')
 
