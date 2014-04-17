@@ -1,5 +1,5 @@
 """Helpers for Selenium tests."""
-
+from __future__ import unicode_literals
 from django.test import LiveServerTestCase
 from bok_choy.web_app_test import WebAppTest
 

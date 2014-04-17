@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Content-oriented XBlocks."""
-
+from __future__ import unicode_literals
 import six
 from string import Template  # pylint: disable=W0402
 
