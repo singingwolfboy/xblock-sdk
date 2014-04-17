@@ -5,10 +5,10 @@ requests
 webob
 simplejson
 lazy
+six
 
 # XBlock
-# This is not in/from PyPi, since it moves fast
--e git+https://github.com/edx/XBlock.git@fdd4b2bb9aa15aa7c217a8cfca6c5c7d5b602688#egg=XBlock
+-e git+https://github.com/singingwolfboy/XBlock.git@5de0638#egg=XBlock
 
 # Acid xblock
 -e git+https://github.com/edx/acid-block.git@459aff7b63db8f2c5decd1755706c1a64fb4ebb1#egg=acid-xblock
